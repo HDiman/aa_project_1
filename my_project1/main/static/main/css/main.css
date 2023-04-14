@@ -28,7 +28,9 @@ aside h3 {
     font-size: 38px;
 }
 
-aside ul {list-style: none}
+aside ul {
+    list-style: none;
+}
 
 aside ul li {
     color: #fff;
