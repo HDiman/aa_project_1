@@ -2,8 +2,14 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return render(request, 'main/index.html', {'title': 'Главная страница'})
+    data = {
+        'title': 'Главная страница',
+    }
+    return render(request, 'main/index.html', data)
 
 def about(request):
-    return render(request, 'main/about.html', {'info': 'Информация о нашей компании'})
+    data = {
+        'info': 'Информация о нашей компании',
+    }
+    return render(request, 'main/about.html', data)
 
