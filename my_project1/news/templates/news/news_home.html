@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+
+
+{% block title %} Страница о нас {% endblock %}
+
+{% block body %}
+    <div class="features">
+        <h1>Новости</h1>
+            {% for item in news %}
+                <div class="alert alert-warning">
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.full_text }}</p>
+                </div>
+            {% endfor %}
+        <button class="btn btn-success">Хорошие новости</button>
+    </div>
+
+<!--   {% include 'news/test.html' %}-->
+{% endblock %}
