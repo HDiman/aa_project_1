@@ -31,6 +31,7 @@ class NewsDeleteView(DeleteView):
     template_name = 'news/news-delete.html'
 
 
+# Создание класса для заполнения формы
 def create(request):
     error = ''
     if request.method == 'POST':
