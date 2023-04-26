@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# Здесь созданы поля для Базы Данных
 class Articles(models.Model):
     title = models.CharField('Название', max_length=50)
     anons = models.CharField('Анонс', max_length=250)
